@@ -3,8 +3,11 @@
  * Definitions of variables to maintain app state and provide
  * convenient access to frequently used DOM elements.
  *************************************************************************/
-let GlobalHistoryLogging = true;
-let GlobalDialogClose = null;
+/************************************/
+/* USER DATA                        */
+/************************************/
+//Global variable containing data object of user currently logged in
+let GlobalUserData = {}; //set upon login
 
 /************************************/
 /* MENU VARIABLES                   */
@@ -94,3 +97,34 @@ const GlobalSearchBtn = document.getElementById("searchBtn");
 const GlobalProfileBtn = document.getElementById("profileBtn");
 const GlobalSkipLink = document.getElementById("sLink");
 const GlobalModeTabsContainer = document.getElementById("modeTabs");
+
+/*****************************************************/
+/* CREATE ACCOUNT DIALOG FORM                        */
+/*****************************************************/
+const GlobalCreateAccountDialog = document.getElementById("createAccountDialog");
+const GlobalSubmitCreateAccountBtn = document.getElementById("submitCreateAccountBtn");
+const GlobalCancelCreateAccountBtn = document.getElementById("cancelCreateAccountBtn");
+const GlobalAcctErrBox = document.getElementById("acctErrorBox");
+const GlobalAcctEmailField = document.getElementById("acctEmail");
+const GlobalAcctPasswordField = document.getElementById("acctPassword");
+const GlobalAcctPasswordRepeatField = document.getElementById("acctPasswordRepeat");
+const GlobalAcctDisplayNameField = document.getElementById("acctDisplayName");
+const GlobalAcctProfilePicField = document.getElementById("acctProfilePic");
+const GlobalAcctProfilePicImage = document.getElementById("acctProfilePicImage");
+const GlobalAcctSecurityQuestionField = document.getElementById("acctSecurityQuestion");
+const GlobalAcctSecurityAnswerField = document.getElementById("acctSecurityAnswer");
+const GlobalAcctEmailErr = document.getElementById("acctEmailError");
+const GlobalAcctPasswordErr = document.getElementById("acctPasswordError");
+const GlobalAcctPasswordRepeatErr = document.getElementById("acctPasswordRepeatError");
+const GlobalAcctDisplayNameErr = document.getElementById("acctDisplayNameError");
+const GlobalAcctSecurityQuestionErr = document.getElementById("acctSecurityQuestionError");
+const GlobalAcctSecurityAnswerErr = document.getElementById("acctSecurityAnswerError");
+const GlobalFirstFocusableCreateAccountItem = (() => {
+  let _firstFocusedCreateAccountItem = GlobalAcctEmailField
+  const Store = {
+      get: () => _firstFocusedCreateAccountItem,
+      set: val => (_firstFocusedCreateAccountItem = val)
+  }
+  return Object.freeze(Store)
+})()
+const GlobalDefaultProfilePic = "images/DefaultProfilePic.jpg";
