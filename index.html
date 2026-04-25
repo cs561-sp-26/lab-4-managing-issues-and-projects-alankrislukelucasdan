@@ -25,7 +25,7 @@
     <!-- The TOP NAVIGATION BAR -->
     <header class="navbar"> 
         <a id="sLink" class="skip-link" tabindex="0">Skip to content</a>  
-        <button id="menuBtn" type="button" class="navbar-btn" title="Menu"
+        <button id="menuBtn" type="button" class="navbar-btn hidden" title="Menu"
             aria-controls="sideMenu" aria-label="Actions"
             aria-haspopup="true" aria-expanded="false">
             <span id="menuBtnIcon" class="navbar-btn-icon fas fa-bars"></span>
@@ -34,12 +34,12 @@
         alt="SpeedScore logo">
         <h1 id="appName" class="navbar-title">SpeedScore</h1> 
         <div class="navbar-right-items">
-          <button  id="searchBtn" type="button" class="navbar-btn" title="Search"
+          <button  id="searchBtn" type="button" class="navbar-btn hidden" title="Search" 
             aria-label="Search">
             <span class="navbar-btn-icon fas fa-search"></span>
           </button>
-          <button id="profileBtn" type="button"
-            class="navbar-btn navbar-profile-btn"
+          <button id="profileBtn" type="button" 
+            class="navbar-btn navbar-profile-btn hidden" 
             aria-label="Account and Profile Settings">
           </button>
         </div>
@@ -58,7 +58,7 @@
       </li>
     </ul>
     <!-- "MODE" TABS -->
-    <div id="modeTabs" class="modetab-container" role="tablist" 
+    <div id="modeTabs" class="modetab-container hidden" role="tablist"
       aria-label="App Modes">
       <button id="feedMode" type="button" 
         class="modetab-btn modetab-selected" 
@@ -86,7 +86,7 @@
       </button>
     </div>
     <main>
-      <div id="feedModeTab" class="mode-page" role="tabpanel"
+      <div id="feedModeTab" class="mode-page hidden" role="tabpanel"
         aria-label="Feed Tab" tabindex="0">
         <h1 class="mode-page-header">Activity Feed</h1>
         <p class="mode-page-content">This page is under construction.</p>
@@ -367,7 +367,6 @@
       </div>
     </main>
     <script src="scripts/main.js"></script>
-    <script src="scripts/window.js"></script>
     <script src="scripts/sideMenu.js"></script>
     <script src="scripts/modeTabs.js"></script>
     <script src="scripts/modeActions.js"></script>
