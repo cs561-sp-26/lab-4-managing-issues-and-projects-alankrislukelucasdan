@@ -34,7 +34,7 @@
   }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .disabled {
@@ -130,12 +130,19 @@
 /* navbar-profile-pic styles the user's profile picture 
    that appears in the navbar 
 */
+.navbar-profile-btn {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 44px;
+    width: 44px;
+    background-image: url("../images/DefaultProfilePic.jpg");
+    background-size: cover;
+    flex-shrink: 0;
+}
+
 .navbar-profile-pic {
-    cursor: pointer;
-    height: 46px;
-    width: auto;
-    margin-left: 16px;
-} 
+    background-size: cover;
+}
 
 /*************************************************************************
 * CSS CLASSES FOR SIDE MENU
@@ -213,7 +220,7 @@
 * CSS CLASSES FOR MODE PAGES
 *************************************************************************/
 .mode-page {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .mode-page-header {
@@ -273,4 +280,75 @@
 change cursor to pointer */
 .float-btn:hover {
 cursor: pointer;
+}
+
+/*************************************************************************
+* CSS CLASSES FOR FORMS
+*************************************************************************/
+
+.fm-primary-btn {
+    width:70%; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 36px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+.fm-profile-pic {
+    padding-bottom: 8px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.highlight-error {
+    background-color: #ffdddd;
+} 
+
+/*************************************************************************
+* CSS CLASSES FOR DIALOGS
+*************************************************************************/
+
+.dialog-primary-btn {
+    width:35%; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    font-size: 24px;
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+.dialog-cancel-btn {
+    width:35%; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: var(--text-color);
+    background-color: var(--main-red-color);
+}
+
+/*************************************************************************
+* CSS CLASSES FOR TOAST NOTIFICATION
+*************************************************************************/
+
+.toast-container {
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    line-height: 40px;
+    display: flex;
+}
+
+.toast-text {
+    font-size: larger;
+    width: 100%;
+    text-align: center;
+}
+
+.toast-close {
+   pointer-events: visible;
+   margin-left: auto;
+   vertical-align: middle;
 }
