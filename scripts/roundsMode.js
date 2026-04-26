@@ -50,3 +50,16 @@ thisRound.id = "r-" + roundId; //set unique id of  row so we can access it later
 thisRound.classList.add("row-item"); //needed for sorting.
 writeRoundToTable(thisRound,roundIndex);
 }
+
+/*************************************************************************
+* @function updateRoundInTable 
+* @desc 
+* Updates an existing round in the "Rounds" table with edits made by user.
+* After locating the row, calls writeRoundToTable to write data.
+* @param rowIndex: index in userData.rounds of round to update
+* @global userData: the current user's data object
+*************************************************************************/
+function updateRoundInTable(rowIndex) {
+const thisRound = document.getElementById("r-" + GlobalUserData.rounds[rowIndex].roundNum);
+writeRoundToTable(thisRound,rowIndex);
+}
