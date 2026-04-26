@@ -63,3 +63,22 @@ function updateRoundInTable(rowIndex) {
 const thisRound = document.getElementById("r-" + GlobalUserData.rounds[rowIndex].roundNum);
 writeRoundToTable(thisRound,rowIndex);
 }
+
+/*************************************************************************
+* @function populateRoundsTable 
+* @desc 
+* Iterate through the userData.rounds array, adding a row corresponding
+* to each round stored in the array. 
+* @global GlobaluserData: object containing the current user's data
+* @global GlobalRoundsDataCaption: The caption for the "Rounds" table
+*************************************************************************/
+function populateRoundsTable() {
+for (let i = 0; i < GlobalUserData.rounds.length; ++i) {
+  addRoundToTable(i);
+}
+if (GlobalUserData.rounds.length == 1) {
+  GlobalRoundsTableCaption.textContent = "Table displaying 1 speedgolf round";
+} else {
+  GlobalRoundsTableCaption.textContent = "Table displaying " + GlobalUserData.rounds.length + " speedgolf rounds";
+}
+}
