@@ -28,3 +28,25 @@ GlobalUserData.rounds[rIndex].seconds +
 "onclick='confirmDelete(" + GlobalUserData.rounds[rIndex].roundNum + ")'>" +
 "<span class='fas fa-trash'></span></button></td>";
 }
+
+/*************************************************************************
+* @function addRoundToTable 
+* @desc 
+* Adds a new round to the "Rounds" table, updating the caption
+* @param roundIndex: index in userData.rounds of round to add
+* @global GlobalUserData: the current user's data object
+* @global GlobalRoundsTableCaption: The table's caption
+*************************************************************************/
+function addRoundToTable(roundIndex) {
+const roundId = GlobalUserData.rounds[roundIndex].roundNum;
+if (GlobalRoundsTable.rows[1].innerHTML.includes ("colspan")) {
+  //empty table! Remove this row before adding new one
+  GlobalRoundsTable.deleteRow(1);
+}
+//Write new row containing new round to table body
+const thisRoundBody = GlobalRoundsTable.querySelector("tbody");
+const thisRound = thisRoundBody.insertRow(0); //insert as first table row
+thisRound.id = "r-" + roundId; //set unique id of  row so we can access it later
+thisRound.classList.add("row-item"); //needed for sorting.
+writeRoundToTable(thisRound,roundIndex);
+}
