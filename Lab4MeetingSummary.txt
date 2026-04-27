@@ -1,0 +1,26 @@
+The document is a detailed transcript of a team meeting held on April 23, 2026, focusing on a planning poker session for software development user stories. The team discusses the backlog items in JIRA, estimates story points for various functionalities, and addresses issues with tools and features during their collaboration.
+
+Meeting Setup and Initial Discussion
+The meeting began with the team clarifying where the user stories were located, confirming that they were available in the JIRA backlog and sprint board. Some members experienced issues with the summary page links in JIRA, which led to the conclusion that those features might be premium and not currently in use by the team  [1] [2].
+The team confirmed that the planning poker would be conducted using an online tool (scrum pokeronline.org), and they discussed the need for a document to track the poker session results. It was agreed that transcriptions of the call would be used due to reliability issues with ReadAI  [3] [4].
+
+Understanding and Organizing User Stories
+Members expressed varying familiarity with JIRA, noting that the user stories were different from previous labs and included subtasks that affected numberingand sorting. They agreed to proceed chronologically through the backlog, which contained about 11 work items relevant for planning poker  [5] [6].
+The team noted that some user stories were missing or appeared as subtasks, and they worked to align their views by filtering unassigned tasks and comparing lists to an Excel spreadsheet shared among them  [7] [8].
+
+Planning Poker and Story Point Estimation
+The team began voting on user stories, starting with “User can create an account in the system.” They reviewed the interface and functionality, noting that the implementation was mostly raw HTML and JavaScript without backend complexity. Story points were assigned relatively, with some discussion about the complexity and time required  [9] [10].
+Subsequent stories such as “User can edit their profile” were evaluated, with votes reflecting the number of fields and checkboxes involved, and considerations about formatting and validation complexity. The team acknowledged the importance of factoring in time and effort for these tasks  [11] [12].
+The “User can log in to the system” story was discussed, highlighting that the login page had basic validation and that backend processes were assumed to be handled by APIs. Story points were assigned with some adjustments after discussion  [13] [14].
+Other stories, such as adding and editing rounds, viewing rounds, and searching and sorting rounds, were also considered. The team debated the dependency between adding and editing rounds and the relative complexity of viewing versus interacting with data (searching, sorting), notingthat framework familiarity (React, MERN stack) influenced perceived difficulty  [15] [16].
+
+Tooling, Testing, and Implementation Considerations
+The conversation included whether automated testing and accessibility checks (using Playwright and accessibility frameworks) were part of the user stories or separate tasks. The team leaned toward integrating testing as part of the developmentprocess, rather than treating it as separate stories  [17] [18].
+Issues with links, document sharing, and tool access were addressed, including sharing the Excel tracking sheet via Teams and OneDrive to ensure everyone could follow along and contribute  [19] [20].
+
+Cancelled or Unimplemented Stories
+The last few user stories, including “User can log out,” “Reset password,” and “Delete round,” were found to be unimplemented or non-functional in the current version of the application. The team decided to cancel or repurpose these stories, noting that features like logout and settings were presentbut not operational, and some pages like reset password and delete round did not work  [21] [22].
+
+Meeting Conclusion and Next Steps
+The team concluded the planning poker session and discussed the need to associate user stories with code uploads and testing responsibilities. They emphasized the importance of clear task distribution and agreed to store the transcript in their repository as part of their documentation  [23] [24].
+Overall, the meeting was a collaborative effort to estimate the effort required for various user stories in a software project, address tooling challenges, and plan the next steps for development and testing.

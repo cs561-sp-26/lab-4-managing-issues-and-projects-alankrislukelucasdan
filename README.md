@@ -4,7 +4,7 @@
 _You need to update this README file only once, when you have completed the lab._
 ## Team Members
 - Kris (KrisSoto)
-- Name 2 (GitHub ID 2)
+- Alan (AlanWallace-OSU)
 - Name 3 (GitHub ID 3)
 - Name 4 (GitHub ID 4)
 - Name 5 (GitHub ID 5)
@@ -21,14 +21,14 @@ _You need to update this README file only once, when you have completed the lab.
 - Advanced features are paywalled, causing issues for small teams or simple projects.
 
 ### Pros of GitHub Projects
-- Pro 1
-- Pro 2
-- Pro 3
+- Tight integration with GitHub Repos
+- Same feel as GitHub with regards to styling
+- Fairly simple to use for small projects that don't require a lot of collaboration
 
 ### Cons of GitHub Projects
-- Con 1
-- Con 2
-- Con 3
+- Can be difficult to figure out how to get started
+- Does not appear to be any pre-defined setup for Agile development
+- You more or less have to build your processes yourself with each project
 
 ## Tool Chosens
 Jira
@@ -44,7 +44,7 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 | Name | # Commits 
 | --------- | -----------
 | Kris | 6 
-| Name 2 | 8 
+| Alan | 6 
 | Name 3 | 5 
 | Name 4 | 3 
 | Name 5 | 2 
@@ -56,7 +56,9 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 |---|-------------|-----------------|-------------|---------------|-------------|---------------
 |[#3](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-3)| Add the create account feature | `SCRUM-3/create_account` | Kris | 5 | 4/24/25 | 4/25/25
 |[#24](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-24)| Add the login feature | `SCRUM-24/login` | Kris | 2 | 4/24/25 | 4/25/25
+|[#38](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-38)| User can view a list of rounds | `SCRUM-38/rounds-list` | Alan | 2 | 4/26/25 | 4/26/25
 
+## Teams Planning Poker Meeting Transcript Link
+[Teams AI Summary](./Lab4MeetingSummary.txt)
 
-## Read.ai Planning Poker Meeting Report Link
-[Project link](url)
+[Full Teams Transcript](./Lab-4-Meetup.docx)
