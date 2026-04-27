@@ -3,7 +3,7 @@
 # CS 561 Lab 4 README
 _You need to update this README file only once, when you have completed the lab._
 ## Team Members
-- Name 1 (GitHub ID 1)
+- Kris (KrisSoto)
 - Name 2 (GitHub ID 2)
 - Name 3 (GitHub ID 3)
 - Name 4 (GitHub ID 4)
@@ -11,14 +11,14 @@ _You need to update this README file only once, when you have completed the lab.
 
 ## Jira vs. GitHub Projects
 ### Pros of Jira
-- Pro 1
-- Pro 2
-- Pro 3
+- Built-in support for scrum boards, designed with the idea of supporting agile teams in mind.  
+- Very customizable, has a lot of integrations and third-party apps available.
+- Widespread adoption in the industry means many developers and stakeholders are familiar with the platform.
 
 ### Cons of Jira
-- Con 1
-- Con 2
-- con 3
+- Can be complicated for new users to learn.
+- Too many features for teams working on smaller projects.
+- Advanced features are paywalled, causing issues for small teams or simple projects.
 
 ### Pros of GitHub Projects
 - Pro 1
@@ -30,20 +30,20 @@ _You need to update this README file only once, when you have completed the lab.
 - Con 2
 - Con 3
 
-## Tool Chosen
-[Jira or GitHub Projects]
+## Tool Chosens
+Jira
 
 ## Rationale
-Write one paragraph rationale here.
+We picked Jira due to team familiarity and the built-in sprint planning tools. Due to Jira's widespread adoption a couple of team members were familiar with the platform and another was currently transitioning towards using it. That combined with the quality of the sprint planning tools we felt it was a good choice for our team. We were happy with the workflow moving from Epic to Story to Sub-tasks along with the default Kanban board. Since these are core features for Jira, and team members had experience with the platform, we were confident that we could quickly pick it up.
 
 ## Jira or GitHub Project link
-[Project link](url)
+https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 
 ## Commits
 
 | Name | # Commits 
 | --------- | -----------
-| Name 1 | 12 
+| Kris | 6 
 | Name 2 | 8 
 | Name 3 | 5 
 | Name 4 | 3 
@@ -54,7 +54,8 @@ Write one paragraph rationale here.
 
 | # | Title       | Feeature Branch | Assigned To | Story Points | Date Started | Date Completed
 |---|-------------|-----------------|-------------|---------------|-------------|---------------
-|[#23](url)|Create mode bar | `feature/mode_bar` | Chris | 3 | 4/15/25 | 4/17/25
+|[#3](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-3)| Add the create account feature | `SCRUM-3/create_account` | Kris | 5 | 4/24/25 | 4/25/25
+|[#24](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-24)| Add the login feature | `SCRUM-24/login` | Kris | 2 | 4/24/25 | 4/25/25
 
 
 ## Read.ai Planning Poker Meeting Report Link
