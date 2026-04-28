@@ -3,49 +3,49 @@
 # CS 561 Lab 4 README
 _You need to update this README file only once, when you have completed the lab._
 ## Team Members
-- Name 1 (GitHub ID 1)
-- Name 2 (GitHub ID 2)
-- Name 3 (GitHub ID 3)
+- Kris (KrisSoto)
+- Alan (AlanWallace-OSU)
+- Lucas (SragonSlayer)
 - Name 4 (GitHub ID 4)
 - Name 5 (GitHub ID 5)
 
 ## Jira vs. GitHub Projects
 ### Pros of Jira
-- Pro 1
-- Pro 2
-- Pro 3
+- Built-in support for scrum boards, designed with the idea of supporting agile teams in mind.  
+- Very customizable, has a lot of integrations and third-party apps available.
+- Widespread adoption in the industry means many developers and stakeholders are familiar with the platform.
 
 ### Cons of Jira
-- Con 1
-- Con 2
-- con 3
+- Can be complicated for new users to learn.
+- Too many features for teams working on smaller projects.
+- Advanced features are paywalled, causing issues for small teams or simple projects.
 
 ### Pros of GitHub Projects
-- Pro 1
-- Pro 2
-- Pro 3
+- Tight integration with GitHub Repos
+- Same feel as GitHub with regards to styling
+- Fairly simple to use for small projects that don't require a lot of collaboration
 
 ### Cons of GitHub Projects
-- Con 1
-- Con 2
-- Con 3
+- Can be difficult to figure out how to get started
+- Does not appear to be any pre-defined setup for Agile development
+- You more or less have to build your processes yourself with each project
 
-## Tool Chosen
-[Jira or GitHub Projects]
+## Tool Chosens
+Jira
 
 ## Rationale
-Write one paragraph rationale here.
+We picked Jira due to team familiarity and the built-in sprint planning tools. Due to Jira's widespread adoption a couple of team members were familiar with the platform and another was currently transitioning towards using it. That combined with the quality of the sprint planning tools we felt it was a good choice for our team. We were happy with the workflow moving from Epic to Story to Sub-tasks along with the default Kanban board. Since these are core features for Jira, and team members had experience with the platform, we were confident that we could quickly pick it up.
 
 ## Jira or GitHub Project link
-[Project link](url)
+https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 
 ## Commits
 
 | Name | # Commits 
 | --------- | -----------
-| Name 1 | 12 
-| Name 2 | 8 
-| Name 3 | 5 
+| Kris  | 6 
+| Alan  | 6 
+| Lucas | 6 
 | Name 4 | 3 
 | Name 5 | 2 
 | **Total** | **30** 
@@ -54,8 +54,12 @@ Write one paragraph rationale here.
 
 | # | Title       | Feeature Branch | Assigned To | Story Points | Date Started | Date Completed
 |---|-------------|-----------------|-------------|---------------|-------------|---------------
-|[#23](url)|Create mode bar | `feature/mode_bar` | Chris | 3 | 4/15/25 | 4/17/25
+|[#3](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-3)| Add the create account feature | `SCRUM-3/create_account` | Kris | 5 | 4/24/25 | 4/25/25
+|[#24](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-24)| Add the login feature | `SCRUM-24/login` | Kris | 2 | 4/24/25 | 4/25/25
+|[#38](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-38)| User can view a list of rounds | `SCRUM-38/rounds-list` | Alan | 2 | 4/26/25 | 4/26/25
+|[#39](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-39)| User can search and sort rounds | `SCRUM-39_Adding_Search_And_Sort_Rounds` | Lucas | 3 | 4/27/25 | 4/27/25
 
+## Teams Planning Poker Meeting Transcript Link
+[Teams AI Summary](./Lab4MeetingSummary.txt)
 
-## Read.ai Planning Poker Meeting Report Link
-[Project link](url)
+[Full Teams Transcript](./Lab-4-Meetup.docx)

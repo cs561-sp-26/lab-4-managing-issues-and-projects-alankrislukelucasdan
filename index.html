@@ -486,6 +486,50 @@
           </div>
         </form>
       </div>
+            <!-- PROFILE SETTINGS DIALOG -->
+      <div id="profileSettingsDialog" class="mode-page action-dialog hidden" role="dialog" 
+          aria-modal="true" aria-labelledby="profileSettingsHeader" tabindex="0">
+        <h1 id="profileSettingsHeader" class="mode-page-header">Account & Profile</h1>
+        
+        <div class="accordion" id="profileAccordion">
+          <!-- Section 1: Account -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAccount">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAccount">
+                Account Information
+              </button>
+            </h2>
+            <div id="collapseAccount" class="accordion-collapse collapse show" data-bs-parent="#profileAccordion">
+              <div class="accordion-body">
+                <p>Email: <span id="profileEmailDisplay">user@example.com</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- Section 2: Name & Picture -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingName">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseName">
+                Name & Picture
+              </button>
+            </h2>
+            <div id="collapseName" class="accordion-collapse collapse" data-bs-parent="#profileAccordion">
+              <div class="accordion-body">
+                <label for="editDisplayName" class="form-label">Display Name:</label>
+                <input type="text" id="editDisplayName" class="form-control" minlength="5">
+                <label for="editProfilePic" class="form-label mt-2">Profile Picture:</label>
+                <input type="file" id="editProfilePic" class="form-control" accept=".jpg,.png">
+                <img id="editProfilePicPreview" src="images/DefaultProfilePic.jpg" class="mt-2" height="50">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mode-page-btn-container mt-4">
+          <button id="updateProfileBtn" class="mode-page-btn action-dialog action-button" type="button">Update</button>
+          <button id="cancelProfileBtn" class="mode-page-btn action-dialog cancel-button" type="button">Cancel</button>
+        </div>
+      </div>
+
     </main>
     <script src="scripts/main.js"></script>
     <script src="scripts/sideMenu.js"></script>
@@ -495,5 +539,6 @@
     <script src="scripts/document.js"></script>
     <script src="scripts/login.js"></script>
     <script src="scripts/createAccount.js"></script>
+    <script src="scripts/editProfile.js"></script> 
   </body>
 </html>
