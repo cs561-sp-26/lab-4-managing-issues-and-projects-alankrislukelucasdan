@@ -13,6 +13,8 @@ let GlobalUserData = {}; //set upon login
 /* MENU VARIABLES                   */
 /************************************/
 const GlobalMenuBtn =  document.getElementById("menuBtn"); 
+const GlobalMenu = document.getElementById("sideMenu");
+const GlobalMenuIcon = document.getElementById("menuBtnIcon");
 const GlobalMenuItems = document.querySelectorAll("li[role='menuitem']");
 
 //Note: Per Josh Wulf's blog post, we implement all immutable global variables using
@@ -29,25 +31,6 @@ const GlobalFocusedMenuItem = (() => {
 /************************************/
 /* MODE TAB VARIABLES               */
 /************************************/
-//Array of mode names
-const GlobalModeNumbersToModes = new Map([
-  [0, "ACTIVITY_FEED"],
-  [1, "ROUNDS"],
-  [2, "COURSES"],
-  [3, "BUDDIES"]
-]);
-const GlobalModeNumbersToRoutes = new Map([
-  [0, "/activityfeed"],
-  [1, "/rounds"],
-  [2, "/courses"],
-  [3, "/buddies"]
-]);
-const GlobalModeDialogNumbersToRoutes = new Map([
-  [0, "/activityfeed/newpost"],
-  [1, "/rounds/newround"],
-  [2, "/courses/addcourse"],
-  [3, "/buddies/findbuddy"]
-]);
 //The current mode (0, 1, 2, or 3)
 const GlobalCurrentMode = (() => {
     let _currentMode= 0
@@ -73,6 +56,9 @@ const GlobalModeTabButtons =
 //Array of mode tab panel elements:
 const GlobalModeTabPanels = 
   document.querySelectorAll("div[role='tabpanel']");
+//Array mapping current mode to its name, so that
+//we can set document.title appropriately
+GlobalModeNames=["Activity Feed", "Rounds","Courses","Buddies"];
 
 /*****************************************************/
 /* FLOATING ACTION BUTTON AND MODAL DIALOG VARIABLES */
@@ -90,10 +76,11 @@ const GlobalDialogActionButtons =
 const GlobalDialogCancelButtons =
   document.querySelectorAll("button.cancel-button");
 
-/*****************************************************/
-/* OTHER UI COMPONENT VARIABLES */
-/*****************************************************/
+/*******************************************************/
+/* SEARCH BUTTON, PROFILE BUTTON, SKIP LINK, MODE TABS */
+/*******************************************************/
 const GlobalSearchBtn = document.getElementById("searchBtn");
+const GlobalSearchBox = document.getElementById("searchBox");
 const GlobalProfileBtn = document.getElementById("profileBtn");
 const GlobalSkipLink = document.getElementById("sLink");
 const GlobalModeTabsContainer = document.getElementById("modeTabs");
@@ -147,3 +134,75 @@ const GlobalFirstFocusableCreateAccountItem = (() => {
   return Object.freeze(Store)
 })()
 const GlobalDefaultProfilePic = "images/DefaultProfilePic.jpg";
+
+/*****************************************************/
+/* ROUNDS MODE TABLE                                 */
+/*****************************************************/
+const GlobalRoundsTable = document.getElementById("roundsTable");
+const GlobalRoundsTableCaption = document.getElementById("roundsTableCaption");
+const GlobalRoundsTableSortableColHeaders = document.getElementsByClassName('sortable-header');
+const GlobalRoundsTableSortBtns = document.getElementsByClassName('table-sort-btn');
+const GlobalRoundsTableHeaderColLabels = ['date','course','score'];
+const GlobalRoundsTableSortIcons = document.getElementsByClassName('sort-icon');
+
+const GlobalDialogPrepFuncs = [()=>{}, ()=>prepLogRoundForm(), ()=>{}, ()=>{}];
+const GlobalDialogTitles = ["SpeedScore: Post to Feed","SpeedScore: Log Round",
+  "SpeedScore: Add Course","SpeedScore: Find Buddies"];
+
+/*************************************************************************
+ * @function transitionToDialog
+ * @desc 
+ * This function prepares the UI prior to opening a dialog box. It hides
+ * the skip link, banner bar buttons, mode tabs, and current tab panel,
+ * so that they are unavailable while the user interacts with the dialog.
+ * It then displays the dialog box and dialog box title.
+ * Note: This function is placed in main.js because it is useful to 
+ * multiple UI components.
+ * @param dialogTitle: The title of the dialog to which to set 
+ * document.title
+ * @param dialog: A reference to the HTML element containing the dialog;
+ * it will be shown by removing the "hidden" class 
+ * @param dialogPrepFunc: A reference to a function to call to prepare 
+ * the dialog's appearance.
+ * @global GlobalSkipLink: The skip link
+ * @global GlobalMenuBtn: The menu button
+ * @global GlobalModeTabsContainer: The mode tabs
+ * @global GlobalModeTabPanels: array of tab panels 
+ * @global GlobalCurrentMode, index of current mode.
+ *************************************************************************/
+ function transitionToDialog(dialog, dialogTitle, dialogPrepFunc) {
+  GlobalSkipLink.classList.add("hidden"); 
+  GlobalMenuBtn.classList.add("hidden");
+  GlobalSearchBtn.classList.add("hidden");
+  GlobalProfileBtn.classList.add("hidden");
+  GlobalModeTabsContainer.classList.add("hidden");
+  GlobalModeTabPanels[GlobalCurrentMode.get()].classList.add("hidden");
+  document.title = dialogTitle;
+  dialogPrepFunc();
+  dialog.classList.remove("hidden");
+}
+
+/*************************************************************************
+ * @function transitionFromDialog
+ * @param dialogToClose -- a reference to the HML dialog element to close
+ * @desc 
+ * This function restores the UI after closing a dialog box. It shows
+ * the skip link, banner bar buttons, mode tabs, and current tab panel,
+ * Note: This function is placed in main.js because it is useful to 
+ * multiple UI components.
+ * @global GlobalSkipLink: The skip link
+ * @global GlobalMenuBtn: The menu button
+ * @global GlobalModeTabsContainer: The mode tabs
+ * @global GlobalModeTabPanels: array of tab panels 
+ * @global GlobalCurrentMode, index of current mode.
+ *************************************************************************/
+ function transitionFromDialog(dialogToClose) {
+  GlobalSkipLink.classList.remove("hidden"); 
+  GlobalMenuBtn.classList.remove("hidden");
+  GlobalSearchBtn.classList.remove("hidden");
+  GlobalProfileBtn.classList.remove("hidden");
+  GlobalModeTabsContainer.classList.remove("hidden");
+  GlobalModeTabPanels[GlobalCurrentMode.get()].classList.remove("hidden");
+  document.title = "SpeedScore: " + GlobalModeNames[GlobalCurrentMode.get()];
+  dialogToClose.classList.add("hidden");
+}
