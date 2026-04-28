@@ -26,4 +26,7 @@
         .contains("action-dialog")) {
             keyDownDialogFocused(e);
     }
+    else if (GlobalRoundsModeDialog.contains(document.activeElement)) {
+        keyDownRoundDialogFocused(e);
+    }
  });
