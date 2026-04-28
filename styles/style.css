@@ -353,3 +353,28 @@ cursor: pointer;
    margin-left: auto;
    vertical-align: middle;
 }
+
+/*************************************************************************
+* CSS CLASSES FOR PROFILE SETTINGS (SCRUM-13)
+*************************************************************************/
+
+/* Ensures the profile picture preview is a circle */
+.fm-profile-pic {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+/* Styles for the Profile Settings Dialog layout */
+#profileSettingsDialog {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Custom coloring for the Bootstrap accordion when expanded */
+#profileSettingsDialog .accordion-button:not(.collapsed) {
+    background-color: var(--item-highlight-color);
+    color: var(--main-color);
+}

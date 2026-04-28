@@ -104,3 +104,18 @@ function keyDownMenuItemFocused(key) {
         GlobalMenuItems[GlobalFocusedMenuItem.get()].focus();
     } 
 }
+
+/*************************************************************************
+ * PROFILE BUTTON LOGIC (SCRUM-13)
+ *************************************************************************/
+document.getElementById('profileBtn').onclick = function() {
+    // 1. Find all pages (divs with class 'mode-page') and hide them
+    const pages = document.querySelectorAll('.mode-page');
+    pages.forEach(page => page.classList.add('hidden'));
+
+    // 2. Show the Profile Settings Dialog
+    document.getElementById('profileSettingsDialog').classList.remove('hidden');
+    
+    // 3. (Optional) Populate the email field from the UI if needed
+    // document.getElementById('profileEmailDisplay').innerText = "logged-in-user@example.com";
+};
