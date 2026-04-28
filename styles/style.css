@@ -78,7 +78,7 @@
     left: 0px; 
     width: 100%; /* 100% of width of screen */
     align-items: center;
-    z-index: 100; /* Force it to be on top */
+    z-index: 200; /* Force it to be on top */
 }
 
 /* navbar-right-item styles items within navbar that should be right-justified.
@@ -122,7 +122,7 @@
    It should be text color in a large font.
 */
 .navbar-title {
-    margin: 14px 0px 14px 4px;
+    margin: 0px 0px 0px 4px;
     color: var(--text-color);
     font-size: 26px;  
 }
@@ -151,10 +151,10 @@
 /* sidemenu -- Styles the side menu */
 .sidemenu {
     position: fixed; /* Menu stays in place */
-    top: 56px; /* Position menu just below top navbar */
+    top: 60px; /* Position menu just below top navbar */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
-    z-index: 200; /* Force the menu to be near the front */
+    z-index: 250; /* Force the menu to be near the front */
     left: 0px; /* Position side menu on left-hand side of screen */
     height: 100%; /* Menu is full height of window */
     overflow: hidden;
@@ -189,7 +189,7 @@
 /* .modetab -- Style the container enclosing the mode tabs */
 .modetab-container {
     position: fixed;
-    top: 56px;
+    top: 60px;
     left: 0px;
     width: 100%;
     z-index: 150;
@@ -205,8 +205,8 @@
     font-variant: small-caps;
     width: 25%;
     text-align: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     cursor: pointer;
 }   
 
@@ -251,7 +251,7 @@
 
 .mode-page-btn {
     display: inline;
-    font-size: 18px;
+    font-size: 36px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -260,13 +260,25 @@
     cursor: pointer;
 }
 
+.mode-page-btn-cancel {
+    display: inline;
+    font-size: 36px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: var(--text-color);
+    background-color: var(--main-red-color);
+    cursor: pointer;
+}
+    
 /*************************************************************************
 * CSS CLASSES FOR FLOATING ACTION BUTTON
 *************************************************************************/
 /* Float-btn -- Styling for the floating action button. */
 .float-btn {
     position:fixed;
-    width: 120px;
+    width: 136px;
     height: 40px;
     bottom: 20px;
     right: 20px;
@@ -286,6 +298,23 @@ cursor: pointer;
 /*************************************************************************
 * CSS CLASSES FOR FORMS
 *************************************************************************/
+
+.fm-label {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.fm-field {
+    text-align: center;
+    width: 90%;
+    height: 10%;
+    font-size:24px;
+}
+
+.fm-field-descr {
+    font-style: italic;
+    padding-bottom: 16px;
+}
 
 .fm-primary-btn {
     width:70%; 

@@ -46,8 +46,8 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 | Kris  | 6 
 | Alan  | 6 
 | Lucas | 6 
-| Name 4 | 3 
-| Name 5 | 2 
+| Luke | 6 
+| Daniel | 6 
 | **Total** | **30** 
 
 ## Issues
@@ -58,6 +58,9 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 |[#24](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-24)| Add the login feature | `SCRUM-24/login` | Kris | 2 | 4/24/25 | 4/25/25
 |[#38](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-38)| User can view a list of rounds | `SCRUM-38/rounds-list` | Alan | 2 | 4/26/25 | 4/26/25
 |[#39](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-39)| User can search and sort rounds | `SCRUM-39_Adding_Search_And_Sort_Rounds` | Lucas | 3 | 4/27/25 | 4/27/25
+|[#13](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-13)| User can edit their profile | `feature/edit-profile` | Luke | 8 | 4/27/25 | 4/27/25
+|[#31](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-31)| User can add a new round | `SCRUM-31/user-can-add-rounds` | Daniel | 3 | 4/27/25 | 4/27/25
+|[#37](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-37)| User can edit their rounds | `SCRUM-31/user-can-add-rounds` | Daniel | 1 | 4/27/25 | 4/27/25
 
 ## Teams Planning Poker Meeting Transcript Link
 [Teams AI Summary](./Lab4MeetingSummary.txt)
