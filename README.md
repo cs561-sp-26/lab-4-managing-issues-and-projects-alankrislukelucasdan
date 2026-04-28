@@ -6,8 +6,8 @@ _You need to update this README file only once, when you have completed the lab.
 - Kris (KrisSoto)
 - Alan (AlanWallace-OSU)
 - Lucas (SragonSlayer)
-- Name 4 (GitHub ID 4)
-- Name 5 (GitHub ID 5)
+- Luke (goodmalu19)
+- Daniel (gelderdatoregonstate)
 
 ## Jira vs. GitHub Projects
 ### Pros of Jira
