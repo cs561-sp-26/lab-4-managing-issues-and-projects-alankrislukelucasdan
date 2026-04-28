@@ -5,7 +5,7 @@ _You need to update this README file only once, when you have completed the lab.
 ## Team Members
 - Kris (KrisSoto)
 - Alan (AlanWallace-OSU)
-- Name 3 (GitHub ID 3)
+- Lucas (SragonSlayer)
 - Name 4 (GitHub ID 4)
 - Name 5 (GitHub ID 5)
 
@@ -43,9 +43,9 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 
 | Name | # Commits 
 | --------- | -----------
-| Kris | 6 
-| Alan | 6 
-| Name 3 | 5 
+| Kris  | 6 
+| Alan  | 6 
+| Lucas | 6 
 | Name 4 | 3 
 | Name 5 | 2 
 | **Total** | **30** 
@@ -57,6 +57,7 @@ https://alankrislukelucasdan.atlassian.net/jira/software/projects/SCRUM/boards/1
 |[#3](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-3)| Add the create account feature | `SCRUM-3/create_account` | Kris | 5 | 4/24/25 | 4/25/25
 |[#24](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-24)| Add the login feature | `SCRUM-24/login` | Kris | 2 | 4/24/25 | 4/25/25
 |[#38](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-38)| User can view a list of rounds | `SCRUM-38/rounds-list` | Alan | 2 | 4/26/25 | 4/26/25
+|[#39](https://alankrislukelucasdan.atlassian.net/browse/SCRUM-39)| User can search and sort rounds | `SCRUM-39_Adding_Search_And_Sort_Rounds` | Lucas | 3 | 4/27/25 | 4/27/25
 
 ## Teams Planning Poker Meeting Transcript Link
 [Teams AI Summary](./Lab4MeetingSummary.txt)
